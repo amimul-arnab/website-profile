@@ -9,7 +9,7 @@ body {
 }
 
 header {
-    background-color: #EFFAFF; /* Updated navbar color */
+    background-color: #EFFAFF;
     color: #333;
     padding: 1rem;
 }
@@ -65,7 +65,7 @@ header nav ul li a.active::after {
     align-items: center;
     padding: 2rem;
     position: relative;
-    height: 60vh; /* Adjust height as needed */
+    height: 60vh;
 }
 
 .banner .content {
@@ -74,7 +74,7 @@ header nav ul li a.active::after {
     justify-content: space-between;
     width: 100%;
     max-width: 1200px;
-    text-align: center; /* Center align text */
+    text-align: center;
 }
 
 .banner .text {
@@ -83,26 +83,26 @@ header nav ul li a.active::after {
 
 .banner .text .intro {
     font-size: 1.5rem;
-    margin-bottom: 0.5rem; /* Reduce space below */
+    margin-bottom: 0.5rem;
 }
 
 .banner .text .name {
     font-size: 3rem;
     font-weight: 700;
     color: #F1E5E5;
-    margin: 0; /* Remove default margin */
-    line-height: 1.2; /* Adjust line height */
+    margin: 0;
+    line-height: 1.2;
 }
 
 .banner .text .role {
     font-size: 1.25rem;
-    margin-top: 0.5rem; /* Reduce space above */
-    margin-bottom: 0.5rem; /* Reduce space below */
-    line-height: 1.2; /* Adjust line height */
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
 }
 
 .banner .profile-picture {
-    width: 300px; /* Increase size */
+    width: 300px;
     height: auto;
     border: 8px solid #D8D8D8;
     border-radius: 80%;
@@ -112,30 +112,30 @@ header nav ul li a.active::after {
 .banner .profile-picture img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensures the image covers the entire container */
+    object-fit: cover;
 }
 
 .social-icons {
-    margin-top: 1.5rem; /* Reduce space above */
-    text-align: center; /* Center align icons */
+    margin-top: 1.5rem;
+    text-align: center;
 }
 
 .social-icons a {
-    margin: 0 1.5rem; /* Add margin to space out icons */
+    margin: 0 1.5rem;
 }
 
 .social-icons img {
-    width: 60px; /* Adjust icon size as needed */
+    width: 60px;
     height: 60px;
 }
 
 footer {
-    background-color: #333; /* Charcoal black color */
+    background-color: #333;
     color: #fff;
     text-align: center;
     padding: 1rem;
     width: 100%;
-    margin-top: auto; /* Push footer to the bottom */
+    margin-top: auto;
 }
 
 .container {
@@ -218,7 +218,6 @@ footer {
     height: 24px;
 }
 
-/* Specific styles for the introduction page */
 .introduction-section {
     text-align: center;
     padding: 2rem 0;
@@ -247,7 +246,6 @@ footer {
     margin-top: 1rem;
 }
 
-/* Specific styles for the experience page */
 .experience-section,
 .skills-section,
 .education-section,
@@ -261,7 +259,6 @@ footer {
     text-align: left;
 }
 
-/* Media Queries */
 @media (max-width: 600px) {
     header nav ul {
         flex-direction: column;
@@ -291,33 +288,33 @@ footer {
 
     .banner .text .intro {
         font-size: 1.25rem;
-        margin-bottom: 0.5rem; /* Reduce space below */
+        margin-bottom: 0.5rem;
     }
 
     .banner .text .name {
         font-size: 2.5rem;
-        margin: 0; /* Remove default margin */
-        line-height: 1.2; /* Adjust line height */
+        margin: 0;
+        line-height: 1.2;
     }
 
     .banner .text .role {
         font-size: 1rem;
-        margin-top: 0.5rem; /* Reduce space above */
-        margin-bottom: 0.5rem; /* Reduce space below */
-        line-height: 1.2; /* Adjust line height */
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+        line-height: 1.2;
     }
 
     .banner .profile-picture {
-        width: 150px; /* Adjust size for smaller screens */
-        height: 150px; /* Ensure it maintains aspect ratio */
+        width: 150px;
+        height: 150px;
     }
 
     .social-icons {
-        margin-top: 0.5rem; /* Reduce space above */
+        margin-top: 0.5rem;
     }
 
     .social-icons img {
-        width: 30px; /* Adjust icon size for smaller screens */
+        width: 30px;
         height: 30px;
     }
 
