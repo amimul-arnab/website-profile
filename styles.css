@@ -1,0 +1,337 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #EFFAFF; /* Updated navbar color */
+    color: #333;
+    padding: 1rem;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+header nav ul li {
+    margin-right: 1rem;
+}
+
+header nav ul li a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+header nav ul li a:hover,
+header nav ul li a.active {
+    color: #333;
+}
+
+header nav ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    display: block;
+    margin-top: 5px;
+    right: 0;
+    background: #333;
+    transition: width 0.2s ease, background-color 0.2s ease;
+}
+
+header nav ul li a:hover::after,
+header nav ul li a.active::after {
+    width: 100%;
+    left: 0;
+    background: #333;
+}
+
+.banner {
+    background-color: #39424E;
+    color: #D8D8D8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    position: relative;
+    height: 60vh; /* Adjust height as needed */
+}
+
+.banner .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    text-align: center; /* Center align text */
+}
+
+.banner .text {
+    flex: 1;
+}
+
+.banner .text .intro {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem; /* Reduce space below */
+}
+
+.banner .text .name {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #F1E5E5;
+    margin: 0; /* Remove default margin */
+    line-height: 1.2; /* Adjust line height */
+}
+
+.banner .text .role {
+    font-size: 1.25rem;
+    margin-top: 0.5rem; /* Reduce space above */
+    margin-bottom: 0.5rem; /* Reduce space below */
+    line-height: 1.2; /* Adjust line height */
+}
+
+.banner .profile-picture {
+    width: 300px; /* Increase size */
+    height: auto;
+    border: 8px solid #D8D8D8;
+    border-radius: 80%;
+    overflow: hidden;
+}
+
+.banner .profile-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the entire container */
+}
+
+.social-icons {
+    margin-top: 1.5rem; /* Reduce space above */
+    text-align: center; /* Center align icons */
+}
+
+.social-icons a {
+    margin: 0 1.5rem; /* Add margin to space out icons */
+}
+
+.social-icons img {
+    width: 60px; /* Adjust icon size as needed */
+    height: 60px;
+}
+
+footer {
+    background-color: #333; /* Charcoal black color */
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    width: 100%;
+    margin-top: auto; /* Push footer to the bottom */
+}
+
+.container {
+    padding: 2rem;
+}
+
+.section-title {
+    text-align: center;
+    font-size: x-large;
+}
+
+.project-item {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+    padding: 1rem;
+    cursor: pointer;
+    transition: box-shadow 0.3s;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.project-item:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.project-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.project-header img {
+    width: 50px;
+    height: 50px;
+}
+
+.project-title {
+    flex-grow: 1;
+    margin-left: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.project-toggle {
+    font-size: 1.5rem;
+}
+
+.project-details {
+    display: none;
+    margin-top: 1rem;
+    text-align: left;
+}
+
+.project-item.active .project-details {
+    display: block;
+}
+
+.launch-button {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #39424E;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.github-link {
+    display: inline-block;
+    margin-left: 0.5rem;
+    vertical-align: middle;
+}
+
+.github-icon {
+    width: 24px;
+    height: 24px;
+}
+
+/* Specific styles for the introduction page */
+.introduction-section {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.introduction-section .container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.software-section,
+.sales-section,
+.hobbies-section,
+.future-plans-section {
+    padding: 1rem 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 800px;
+    text-align: left;
+}
+
+.quote {
+    text-align: center;
+    font-style: italic;
+    margin-top: 1rem;
+}
+
+/* Specific styles for the experience page */
+.experience-section,
+.skills-section,
+.education-section,
+.participation-section,
+.internships-section,
+.awards-section {
+    padding: 1rem 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 800px;
+    text-align: left;
+}
+
+/* Media Queries */
+@media (max-width: 600px) {
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav ul li {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+
+    .banner {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .banner .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .banner .text,
+    .banner .profile-picture {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .banner .text .intro {
+        font-size: 1.25rem;
+        margin-bottom: 0.5rem; /* Reduce space below */
+    }
+
+    .banner .text .name {
+        font-size: 2.5rem;
+        margin: 0; /* Remove default margin */
+        line-height: 1.2; /* Adjust line height */
+    }
+
+    .banner .text .role {
+        font-size: 1rem;
+        margin-top: 0.5rem; /* Reduce space above */
+        margin-bottom: 0.5rem; /* Reduce space below */
+        line-height: 1.2; /* Adjust line height */
+    }
+
+    .banner .profile-picture {
+        width: 150px; /* Adjust size for smaller screens */
+        height: 150px; /* Ensure it maintains aspect ratio */
+    }
+
+    .social-icons {
+        margin-top: 0.5rem; /* Reduce space above */
+    }
+
+    .social-icons img {
+        width: 30px; /* Adjust icon size for smaller screens */
+        height: 30px;
+    }
+
+    .introduction-section .container,
+    .software-section,
+    .sales-section,
+    .hobbies-section,
+    .future-plans-section,
+    .experience-section,
+    .skills-section,
+    .education-section,
+    .participation-section,
+    .internships-section,
+    .awards-section {
+        padding: 1rem;
+    }
+}
